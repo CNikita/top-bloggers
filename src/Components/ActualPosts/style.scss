@@ -1,0 +1,41 @@
+.actual-posts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    &__images {
+        width: 23%;
+        position: relative;
+        overflow: hidden;
+        .image-down {
+            background-image: url("../../images/Group6.svg");
+            width: 310px;
+            height: 330px;
+            position: absolute;
+            top: 192px;
+            left: -105px;
+        }
+        .image-up {
+            background-image: url("../../images/quotes.svg");
+            width: 100px;
+            height: 78px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    }
+    &__content {
+        width: calc(74% - 120px);
+        padding-right: 80px;
+        min-height: 650px;
+        .title {
+            font-weight: 600;
+            font-size: 48px;
+            color: #384758;
+            margin-bottom: 40px;
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
+        }
+    }
+}

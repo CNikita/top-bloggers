@@ -1,0 +1,22 @@
+Header {
+  padding: 65px 0 30px;
+  h1 {
+    color: #384758;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .description {
+    margin-top: 45px;
+    font-size: 18px;
+    color: #606f81;
+    text-align: center;
+  }
+}

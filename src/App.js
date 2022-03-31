@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Slider from "./Components/Slider";
+import Header from "./Components/Header";
+import ActualPosts from "./Components/ActualPosts";
+import './App.scss';
 
-function App() {
+export default function App() {
+  const [userId, setUserId] = useState()
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/users`)
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(element => element.photo = `https://i.pravatar.cc/400?img=${element.id}`)
+        setUsers(data)
+        setUserId(10)
+      })
+  }, []);
+
+  function handlerChange(id) {
+    setUserId(id);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Slider users={users} userId={userId} handlerChange={handlerChange} />
+        <ActualPosts userId={userId} users={users} />
+      </main>
+    </>
   );
 }
-
-export default App;

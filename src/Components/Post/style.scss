@@ -1,0 +1,27 @@
+.post {
+    margin-top: 20px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 24px;
+        color: #384758;
+        &:first-letter {
+            text-transform: capitalize;
+        }
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+    &__content {
+        margin-top: 7px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #606f81;
+        &:first-letter {
+            text-transform: capitalize;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}

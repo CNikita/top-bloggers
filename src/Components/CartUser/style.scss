@@ -1,0 +1,35 @@
+.user-item {
+    flex: 1;
+    &__img {
+        height: 320px !important;
+    }
+    &__name {
+        position: relative;
+        margin-top: 20px;
+        text-align: left;
+        color: #384758;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    &__companyName {
+        text-align: left;
+        color: #606f81;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    &_checked {
+        .user-item__name,
+        .user-item__companyName {
+            color: #fe8700;
+        }
+        .user-item__name::before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            width: 100%;
+            height: 5px;
+            background: #fe8700;
+            box-sizing: border-box;
+        }
+    }
+}
