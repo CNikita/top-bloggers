@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/top-bloggers/static/css/main.d2a44859.css",
+    "main.js": "/top-bloggers/static/js/main.7367c7df.js",
+    "static/media/Group6.svg": "/top-bloggers/static/media/Group6.6a9c573121ad513bbac5.svg",
+    "static/media/arrow.svg": "/top-bloggers/static/media/arrow.f1ac05156362fc518977.svg",
+    "index.html": "/top-bloggers/index.html",
+    "static/media/quotes.svg": "/top-bloggers/static/media/quotes.6219b206ad80c8a64d8f.svg",
+    "main.d2a44859.css.map": "/top-bloggers/static/css/main.d2a44859.css.map",
+    "main.7367c7df.js.map": "/top-bloggers/static/js/main.7367c7df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2a44859.css",
+    "static/js/main.7367c7df.js"
+  ]
+}
